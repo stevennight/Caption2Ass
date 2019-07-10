@@ -172,7 +172,6 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\common\CommRoutine.cpp" />
     <ClCompile Include="ass_header.cpp" />
     <ClCompile Include="Caption2Ass_PCR.cpp" />
     <ClCompile Include="Caption2AssParameter.cpp" />
@@ -180,6 +179,7 @@
     <ClCompile Include="cmdline.cpp" />
     <ClCompile Include="IniFile.cpp" />
     <ClCompile Include="tslUtil.cpp" />
+    <ClCompile Include="CommRoutine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\common\Caption.h" />

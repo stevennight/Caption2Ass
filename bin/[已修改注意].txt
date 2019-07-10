@@ -1,0 +1,2 @@
+Caption2AssC_x64.exe文件已经修改后重新编译，修正ass文件头的format，避免使用样式不设置颜色时字幕会显示成黑色的问题。
+原文件备份：Caption2AssC_x64.exe.bak

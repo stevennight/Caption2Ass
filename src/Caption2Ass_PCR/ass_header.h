@@ -11,7 +11,7 @@ WrapStyle: 0\r\n"
 #define ASS_HEADER2 "ScaledBorderAndShadow: yes\r\n\
 \r\n\
 [V4+ Styles]\r\n\
-Format: Name, Fontname, Fontsize, PrimaryColor, SecondaryColor, OutlineColor, BackColor, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\r\n"
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\r\n"
 
 #define ASS_HEADER3 "\r\n\
 [Events]\r\n\

@@ -1,0 +1,116 @@
+﻿生成启动时间为 2019/7/10 10:15:05。
+     1>项目“E:\Project\Other\Caption2Ass-master\Caption2Ass_PCR\Caption2Ass_PCR.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         E:\Software\Develop\VS2012\VC\bin\x86_amd64\CL.exe /c /I..\common /Zi /nologo /W3 /WX- /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /FA /Fa"..\x64\Release\Caption2AssC\\" /Fo"..\x64\Release\Caption2AssC\\" /Fd"..\x64\Release\Caption2AssC\vc110.pdb" /Gd /TP /errorReport:prompt ass_header.cpp Caption2Ass_PCR.cpp Caption2AssParameter.cpp CaptionDllUtil.cpp cmdline.cpp IniFile.cpp tslUtil.cpp CommRoutine.cpp
+         ass_header.cpp
+         Caption2Ass_PCR.cpp
+         Caption2AssParameter.cpp
+         CaptionDllUtil.cpp
+         cmdline.cpp
+         IniFile.cpp
+         tslUtil.cpp
+         CommRoutine.cpp
+     1>CommRoutine.cpp(28): warning C4566: 由通用字符名称“\u30FB”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF70”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF61”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF62”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF63”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF64”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(55): warning C4566: 由通用字符名称“\uFF65”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(82): warning C4566: 由通用字符名称“\u30FB”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF67”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF71”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF68”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF72”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF69”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF73”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(86): warning C4566: 由通用字符名称“\uFF6A”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF74”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF6B”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF75”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF76”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF77”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(87): warning C4566: 由通用字符名称“\uFF78”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF78”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF79”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF7A”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF7B”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(88): warning C4566: 由通用字符名称“\uFF7C”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF7C”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF7D”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF7E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF7F”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(89): warning C4566: 由通用字符名称“\uFF80”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF80”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF81”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF6F”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF82”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(90): warning C4566: 由通用字符名称“\uFF83”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF84”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF85”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF86”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF87”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF88”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF89”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(91): warning C4566: 由通用字符名称“\uFF8A”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(92): warning C4566: 由通用字符名称“\uFF8A”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(92): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(92): warning C4566: 由通用字符名称“\uFF9F”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(92): warning C4566: 由通用字符名称“\uFF8B”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(92): warning C4566: 由通用字符名称“\uFF8C”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF8D”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF9F”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF8E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF8F”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(93): warning C4566: 由通用字符名称“\uFF90”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF91”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF92”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF93”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF6C”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF94”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF6D”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF95”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(94): warning C4566: 由通用字符名称“\uFF6E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF96”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF97”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF98”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF99”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF9A”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF9B”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(95): warning C4566: 由通用字符名称“\uFF9C”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(96): warning C4566: 由通用字符名称“\uFF66”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(96): warning C4566: 由通用字符名称“\uFF9D”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(96): warning C4566: 由通用字符名称“\uFF73”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(96): warning C4566: 由通用字符名称“\uFF9E”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF70”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF61”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF62”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF63”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF64”表示的字符不能在当前代码页(936)中表示出来
+     1>CommRoutine.cpp(97): warning C4566: 由通用字符名称“\uFF65”表示的字符不能在当前代码页(936)中表示出来
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.0\bin\x86\rc.exe /D _UNICODE /D UNICODE /l"0x0409" /I..\common /nologo /fo"..\x64\Release\Caption2AssC\Caption2Ass_PCR.res" Caption2Ass_PCR.rc 
+       Link:
+         E:\Software\Develop\VS2012\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\bin\x64\Release\Caption2AssC_x64.exe" /INCREMENTAL:NO /NOLOGO shlwapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"..\..\bin\x64\Release\Caption2AssC_x64.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\bin\x64\Release\Caption2AssC_x64.lib" /MACHINE:X64 ..\x64\Release\Caption2AssC\Caption2Ass_PCR.res
+         ..\x64\Release\Caption2AssC\ass_header.obj
+         ..\x64\Release\Caption2AssC\Caption2Ass_PCR.obj
+         ..\x64\Release\Caption2AssC\Caption2AssParameter.obj
+         ..\x64\Release\Caption2AssC\CaptionDllUtil.obj
+         ..\x64\Release\Caption2AssC\cmdline.obj
+         ..\x64\Release\Caption2AssC\IniFile.obj
+         ..\x64\Release\Caption2AssC\tslUtil.obj
+         ..\x64\Release\Caption2AssC\CommRoutine.obj
+         正在生成代码
+         已完成代码的生成
+         Caption2Ass_PCR.vcxproj -> E:\Project\Other\Caption2Ass-master\Caption2Ass_PCR\..\..\bin\x64\Release\Caption2AssC_x64.exe
+     1>已完成生成项目“E:\Project\Other\Caption2Ass-master\Caption2Ass_PCR\Caption2Ass_PCR.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:09.20

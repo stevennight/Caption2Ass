@@ -2,19 +2,19 @@ chcp 932
 echo off
 setlocal
 SET STR_Version=v2.48_150628r0
-echo H.264è‡ªå‹•ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ãƒ»å­—å¹•åŸ‹ã‚è¾¼ã¿å®Ÿè¡Œãƒãƒƒãƒ %STR_Version%
-rem v2.47to2.48:ãƒ—ãƒªã‚»ãƒƒãƒˆè¨­å®šã‚’å¤‰æ›´. æ—§ç‰ˆã®720på¤‰æ›â†’720pa, BS/CSç­‰FHDè§£åƒåº¦ç”¨ã®é€šå¸¸720på¤‰æ›â†’720p.
-rem v2.45to2.47:Caption2Assã®å®Ÿè¡Œæ–¹æ³•ã‚’å¤‰ãˆã¦å®Ÿè¡Œæ™‚é–“ã‚’å°‘ã—çŸ­ç¸®.ä»•æ§˜å¤‰æ›´ã«å¯¾å¿œã™ã‚‹ãŸã‚ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã‚’å¤‰æ›´.
-rem    å‹•ä½œç¢ºèª:Win8.1, HandBrake 0.10.2, mkvtoolnix 8.8.0 (å…¨ã¦64ãƒ“ãƒƒãƒˆç‰ˆ)
-echo å¼•æ•°æŒ‡å®šæ–¹æ³•: "å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‘ã‚¹" [ãƒ—ãƒªã‚»ãƒƒãƒˆå [mkv/mp4]]
-echo å¼•æ•°æŒ‡å®šä¾‹: "ç•ªçµ„ã‚¿ã‚¤ãƒˆãƒ«.ts" 480p mp4
-echo æ—¢å®šã®è¨­å®š: 720p mkv
-rem æŒ‡å®šãŒç„¡ã‘ã‚Œã°mkvã§å‡ºåŠ›ã—ã¾ã™. MKVå¤‰æ›ã‚’è¡Œã†å ´åˆã¯MKVToolNixãŒå¿…è¦ã§ã™.
-SET PATH_HandBrakeCLI=C:\Program Files\Handbrake\HandBrakeCLI.exe
-SET PATH_Caption2Ass=C:\TvRock\Cap2Ass_C5\Caption2AssC_x64.exe
-SET PATH_mkvmerge=C:\Program Files\MKVToolNix\mkvmerge.exe
-SET PATH_OutputDir=D:\DTV
-SET PATH_LogFile=HB_Batch.log
+echo H.264×Ô„Ó¥¨¥ó¥³©`¥É?×ÖÄ»Âñ¤áŞz¤ßŒgĞĞ¥Ğ¥Ã¥Á %STR_Version%
+rem v2.47to2.48:¸ü¸ÄÁËÔ¤ÉèÉèÖÃ¡£¾É°æ±¾720p×ª»»¡ú720pa£¬BS / CSµÈ.FHD·Ö±æÂÊÕı³£720p×ª»»¡ú720p¡£
+rem v2.45to2.47:¸ü¸ÄCaption2AssµÄÖ´ĞĞ·½·¨²¢ÉÔÎ¢Ëõ¶ÌÖ´ĞĞÊ±¼ä¡£¸ü¸Ä²ÎÊıÒÔ¶ÔÓ¦ÓÚ¹æ·¶¸ü¸Ä¡£
+rem    ÇëÈ·ÈÏ£ºWin8.1, HandBrake 0.10.2, mkvtoolnix 8.8.0 (ËùÓĞ64Î»°æ±¾)
+echo ²ÎÊıÓÃ·¨£º"ÈëÁ¦¥Õ¥¡¥¤¥ë¥Ñ¥¹" [¥×¥ê¥»¥Ã¥ÈÃû [mkv/mp4]]
+echo ²ÎÊı·¶Àı£º"·¬½M¥¿¥¤¥È¥ë.ts" 480p mp4
+echo Ä¬ÈÏÉè¶¨£º720p mkv
+rem Î´Ö¸¶¨Ê±½«Êä³öÎªMKV£¬MKV×ª»»ĞèÒªMKVToolNix¡£
+SET PATH_HandBrakeCLI="C:\Users\Administrator\Desktop\Caption2Ass-master\HandBrakeCLI.exe"
+SET PATH_Caption2Ass="C:\Users\Administrator\Desktop\Caption2Ass-master\bin\Caption2AssC_x64.exe"
+SET PATH_mkvmerge=C:\Users\Administrator\Desktop\Caption2Ass-master\MKVToolNix\mkvmerge.exe
+SET PATH_OutputDir="D:\DTV"
+SET PATH_LogFile="D:\DTV\HB_Batch.log"
 set retnum=127
 set infiledir=%~dp1
 set infiledrive=%~d1
@@ -22,8 +22,8 @@ if not exist "%infiledir%" goto nofiledir
 %infiledrive%
 cd "%infiledir%"
 if not exist "%PATH_LogFile%" (
-call :echo H.264è‡ªå‹•ã‚¨ãƒ³ã‚³ãƒ¼ãƒ‰ãƒ»å­—å¹•åŸ‹ã‚è¾¼ã¿å®Ÿè¡Œãƒãƒƒãƒ ãƒ­ã‚°
-call :echo ãƒ­ã‚°ãƒ•ã‚¡ã‚¤ãƒ«HB_Batch.logã¯è‡ªå‹•ã§ã¯å‰Šé™¤ã•ã‚Œã¾ã›ã‚“. å®šæœŸçš„ã«å‰Šé™¤ã—ã¦ä¸‹ã•ã„.
+call :echo H.264×Ô¶¯±àÂë×ÖÄ»Ç¶ÈëÔËĞĞ½Å±¾
+call :echo ÈÕÖ¾ÎÄ¼şHB_Batch.log²»»á×Ô¶¯É¾³ı£¬Çë¶¨ÆÚÇåÀí
 )
 >>"%PATH_LogFile%" date /t
 >>"%PATH_LogFile%" time /t
@@ -32,7 +32,7 @@ call :echo dir:%infiledir%
 call :echo args:%0 %*
 if not exist "%PATH_HandBrakeCLI%" goto error_noexefile
 if not exist "%PATH_Caption2Ass%" goto error_noexefile
-call :echo å¼•æ•°è§£æ...
+call :echo ²ÎÊı·ÖÎöÖĞ¡­
 set infile=%~1
 set infilename=%~n1
 
@@ -40,23 +40,23 @@ set infilename=%~n1
 if exist "%infile%" goto file_found
 if "%~2"=="" goto nofile
 shift
-set infilename=%infile%ã€€%~n1
-set infile=%infile%ã€€%~1
+set infilename=%infile%¡¡%~n1
+set infile=%infile%¡¡%~1
 goto fpath_repeat
 
 :file_found
 shift
 set enc_type=%~1
-rem æ—¢å®šã®enc_type
-if "%~1"=="" set enc_type=720p
+rem Ä¬ÈÏµÄenc_type
+if "%~1"=="" set enc_type=1080p
 shift
 set file_type=%~1
-rem æ—¢å®šã®file_type
+rem Ä¬ÈÏµÄfile_type
 if "%~1"=="" set file_type=mkv
 call :echo infile:%infile%
 call :echo enc_type:%enc_type%
 call :echo file_type:%file_type%
-rem file_typeãƒã‚§ãƒƒã‚¯
+rem file_type¥Á¥§¥Ã¥¯
 if "%file_type%"=="mp4" (
 rem
 ) else if "%file_type%"=="mkv" (
@@ -69,9 +69,9 @@ rem
 goto error_sel_ftype
 )
 
-rem HandBrakeCLIã®å¼•æ•°ã‚’è¨­å®š å¥½ã¿ã«å¿œã˜ã¦å¤‰ãˆã¦ä¸‹ã•ã„
+rem ¸ù¾İÄúµÄÏ²ºÃÉèÖÃHandBrake CLIµÄ²ÎÊı
 set PARAM_VideoOptions=-e x264 -q 24 -r 23.976 --cfr --h264-level=4.0 --h264-profile=high
-set PARAM_AudioOptions=-a 1 -E faac -6 stereo -D 0 --gain 0
+set PARAM_AudioOptions=-a 1,2,3,4,5 -E faac -6 stereo -D 0 --gain 0
 if "%enc_type%"=="720pa" (
 set PARAM_FileDesc=720p x264 AAC
 set PARAM_PictureOptions=-Y 720 --crop 0:0:0:0 --modulus 8 --loose-anamorphic
@@ -87,20 +87,35 @@ set PARAM_FileDesc=720i x264 AAC
 set PARAM_PictureOptions=-Y 720 --crop 0:0:0:0
 set PARAM_FilterOptions=
 set PARAM_Cap2AssOptions=
+) else if "%enc_type%"=="480p" (
+set PARAM_FileDesc=480p x264 AAC
+set PARAM_PictureOptions=-Y 480 --crop 0:0:0:0
+set PARAM_FilterOptions=--deinterlace=slower
+set PARAM_Cap2AssOptions=-asstype 852x480
+)  else if "%enc_type%"=="360p" (
+set PARAM_FileDesc=360p x264 AAC
+set PARAM_PictureOptions=-Y 360 --crop 0:0:0:0
+set PARAM_FilterOptions=
+set PARAM_Cap2AssOptions=-asstype 480x360
+) else if "%enc_type%"=="1080p" (
+set PARAM_FileDesc=1080p x264 AAC
+set PARAM_PictureOptions=-Y 1080 --crop 0:0:0:0
+set PARAM_FilterOptions=--deinterlace=slower
+set PARAM_Cap2AssOptions=
 ) else (
 goto end_err
 )
-rem MKVã®å ´åˆã¯å­—å¹•ãƒ‡ãƒ¼ã‚¿ã¯ass,srtã‚’åŸ‹ã‚è¾¼ã‚€
-rem MP4ã®å ´åˆã¯å­—å¹•ãƒ‡ãƒ¼ã‚¿ã¯srtã‚’åŸ‹ã‚è¾¼ã‚€
+rem MKVÏÂ½«Ç¶Èëass»òsrt×ÖÄ»
+rem MP4ÏÂ½µÇ¶Èësrt×ÖÄ»
 if "%file_type%"=="mkv" goto exportass
 if "%file_type%"=="mp4" goto exportass
 goto end_exportsrt
 
 :exportass
-call :echo å®Ÿè¡Œ:%PATH_Caption2Ass% %PARAM_Cap2AssOptions% -format dual "%infile%"
+call :echo ÔËĞĞ£º%PATH_Caption2Ass% %PARAM_Cap2AssOptions% -format dual "%infile%"
 start "Caption2Ass dual" /WAIT /I /BELOWNORMAL /MIN %PATH_Caption2Ass% %PARAM_Cap2AssOptions% -format dual "%infile%"
 set exitcode=%errorlevel%
-call :echo çµ‚äº†ã‚³ãƒ¼ãƒ‰ %exitcode% .
+call :echo ÍË³ö´úÂë %exitcode% .
 if %exitcode% GEQ 1 goto failed_getcaption
 
 :end_exportsrt
@@ -110,22 +125,22 @@ set fileSize=-1
 call :getFilesize "%infilename%.srt"
 )
 
-call :echo å­—å¹•ãƒ‡ãƒ¼ã‚¿ã‚µã‚¤ã‚º:%fileSize% bytes
+call :echo ×ÖÄ»Êı¾İ´óĞ¡:%fileSize% bytes
 if %fileSize% LEQ 3 (
-call :echo å­—å¹•ãƒ‡ãƒ¼ã‚¿ã¯è¦‹ã¤ã‹ã‚Šã¾ã›ã‚“ã§ã—ãŸ.
+call :echo Ã»ÓĞÕÒµ½×ÖÄ»ÎÄ¼ş
 if "%file_type%"=="mp4" set file_type=mp4_nosub
 if "%file_type%"=="mkv" set file_type=mkv_nosub
 ) else (
-rem å­—å¹•ãƒ‡ãƒ¼ã‚¿ãŒã‚ã‚‹å ´åˆ
+rem ×ÖÄ»ÎÄ¼ş´æÔÚ
 )
 goto end_getcaption
 
 :failed_getcaption
-call :echo å­—å¹•ãƒ‡ãƒ¼ã‚¿ã®æŠ½å‡ºã«å¤±æ•—ã—ã¾ã—ãŸ.
+call :echo ÌáÈ¡×ÖÄ»Êı¾İÊ§°Ü
 if "%file_type%"=="mp4" set file_type=mp4_nosub
 if "%file_type%"=="mkv" set file_type=mkv_nosub
 :end_getcaption
-rem å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã®æ‹¡å¼µå­åã‚’è¨­å®š
+rem Êä³öÎÄ¼şÀ©Õ¹ÃûÉèÖÃ
 if "%file_type%"=="mp4" ( 
 set outftypename=mp4
 set PARAM_SubtitleOptions=-N jpn --srt-file "%infilename%.srt" --srt-codeset UTF-8 --srt-lang jpn
@@ -141,48 +156,51 @@ set PARAM_SubtitleOptions=
 ) else (
 goto error_sel_ftype
 )
-rem æ—¢ã«åŒåã®å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã™ã‚Œã°çµ‚äº†
+rem Êä³öÎÄ¼şÖØÃû³åÍ»
 if exist "%infilename% (%PARAM_FileDesc%).%file_type%" goto error_samefileexist
 if exist "%PATH_OutputDir%\%infilename% (%PARAM_FileDesc%).%file_type%" goto error_samefileexist
 call :echo HandBrakeCLI %file_type% %PARAM_FileDesc%
-call :echo å®Ÿè¡Œ:"%PATH_HandBrakeCLI%" -i "%infile%" -o "%infilename% (%PARAM_FileDesc%).%outftypename%" -f %outftypename% %PARAM_FilterOptions% %PARAM_VideoOptions% %PARAM_AudioOptions% %PARAM_PictureOptions% --verbose=1 %PARAM_SubtitleOptions%"
-start "HandBrakeCLI %file_type% %PARAM_FileDesc% %infilename%" /WAIT /I /BELOWNORMAL /MIN "%SystemRoot%\System32\cmd.exe" /c "1>"%infilename% (%PARAM_FileDesc%).%outftypename%.log" 2>&1 3>&1 "%PATH_HandBrakeCLI%" -i "%infile%" -o "%infilename% (%PARAM_FileDesc%).%outftypename%" -f %outftypename% %PARAM_FilterOptions% %PARAM_VideoOptions% %PARAM_AudioOptions% %PARAM_PictureOptions% --verbose=1 %PARAM_SubtitleOptions%"
+call :echo Ö´ĞĞ:"%PATH_HandBrakeCLI%" -i "%infile%" -o "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" -f %outftypename% %PARAM_FilterOptions% %PARAM_VideoOptions% %PARAM_AudioOptions% %PARAM_PictureOptions% --verbose=1 %PARAM_SubtitleOptions%"
+start "HandBrakeCLI %file_type% %PARAM_FileDesc% %infilename%" /WAIT /I /BELOWNORMAL /MIN "%SystemRoot%\System32\cmd.exe" /c "1>"%infilename% (%PARAM_FileDesc%).%outftypename%.log" 2>&1 3>&1 "%PATH_HandBrakeCLI%" -i "%infile%" -o "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" -f %outftypename% %PARAM_FilterOptions% %PARAM_VideoOptions% %PARAM_AudioOptions% %PARAM_PictureOptions% --verbose=1 %PARAM_SubtitleOptions%"
 set exitcode=%errorlevel%
-call :echo çµ‚äº†ã‚³ãƒ¼ãƒ‰ %exitcode% .
+call :echo ÍË³ö´úÂë %exitcode% .
 if %exitcode% NEQ 0 goto hb_err
 
 if "%file_type%"=="mkv" goto mergesub
 goto hb_success
 :mergesub
 ren "%infilename% (%PARAM_FileDesc%).%outftypename%" "%infilename% (%PARAM_FileDesc%).temp.%outftypename%"
-call :echo mkvmergeå‡¦ç†...
-call :echo å®Ÿè¡Œ:"%PATH_mkvmerge%" --default-language jpn -o "%infilename% (%PARAM_FileDesc%).%outftypename%" "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" "%infilename%.ass" "%infilename%.srt"
+call :echo mkvmergeÖ´ĞĞ
+call :echo Ö´ĞĞ:"%PATH_mkvmerge%" --default-language jpn -o "%infilename% (%PARAM_FileDesc%).%outftypename%" "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" "%infilename%.ass" "%infilename%.srt"
 start "mkvmerge %file_type% %PARAM_FileDesc% %infilename%" /WAIT /I /BELOWNORMAL /MIN "%SystemRoot%\System32\cmd.exe" /c "1>>"%infilename% (%PARAM_FileDesc%).%outftypename%.log" 2>>&1 3>>&1 "%PATH_mkvmerge%" --default-language jpn -o "%infilename% (%PARAM_FileDesc%).%outftypename%" "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" "%infilename%.ass" "%infilename%.srt""
 set exitcode=%errorlevel%
-call :echo çµ‚äº†ã‚³ãƒ¼ãƒ‰ %exitcode% .
+call :echo ÍË³ö´úÂë %exitcode% .
 if %exitcode% NEQ 0 goto hb_err
 
 :hb_success
-call :echo --- æ­£å¸¸çµ‚äº† ---
+call :echo --- Ö´ĞĞÍê³É ---
 set retnum=0
-call :echo å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«:%infilename% (%PARAM_FileDesc%).%outftypename%
-rem ãƒ•ã‚¡ã‚¤ãƒ«ç§»å‹•å‡¦ç†
+call :echo Êä³öÎÄ¼ş:%infilename% (%PARAM_FileDesc%).%outftypename%
+rem ÎÄ¼şÒÆ¶¯
 IF DEFINED PATH_OutputDir (
 IF NOT EXIST "%PATH_OutputDir%" goto error_outdirnotexist
 MOVE /Y "%infilename% (%PARAM_FileDesc%).%outftypename%" "%PATH_OutputDir%"
-call :echo å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ç§»å‹•:%PATH_OutputDir%
+MOVE /Y "%infilename%.ass" "%PATH_OutputDir%"
+MOVE /Y "%infilename%.srt" "%PATH_OutputDir%"
+call :echo ÎÄ¼şÒÆ¶¯:%PATH_OutputDir%
 ) else (
-call :echo ç’°å¢ƒå¤‰æ•°PATH_OutputDirãŒæœªå®šç¾©ã®ãŸã‚ã€å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç§»å‹•ã—ã¾ã›ã‚“.
+call :echo »·¾³±äÁ¿PATH_OutputDirÎ´¶¨Òå£¬ÎŞ·¨ÒÆ¶¯ÎÄ¼ş¡£
 )
-if not exist "%infiledir%converted" mkdir "%infiledir%converted"
-MOVE /Y "%infilename% (%PARAM_FileDesc%).%outftypename%.log" "%infiledir%converted"
-call :echo å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ç§»å‹•:%infiledir%converted
-MOVE /Y "%infile%" "%infiledir%converted"
-rem ä¸‡ãŒä¸€å¤‰æ›ä½œæ¥­ã«å¤±æ•—ã—ãŸã¨ãã®ãŸã‚ã«å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã¯å‰Šé™¤ã—ã¦ã„ã¾ã›ã‚“. ãƒãƒƒãƒå‡¦ç†ã§å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å‰Šé™¤ã—ãŸã„å ´åˆã¯ä¸Šã®2è¡Œã®è¡Œé ­ã«REMã‚’ä»˜ã‘ã¦æ¬¡ã®2è¡Œã®è¡Œé ­ã®REMã‚’å‰Šé™¤ã—ã¦ä¸‹ã•ã„.
-rem call :echo å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«å‰Šé™¤
+rem if not exist "%infiledir%converted" mkdir "%infiledir%converted"
+rem MOVE /Y "%infilename% (%PARAM_FileDesc%).%outftypename%.log" "%infiledir%converted"
+rem call :echo ÊäÈëÎÄ¼şÒÆ¶¯:%infiledir%converted
+rem MOVE /Y "%infile%" "%infiledir%converted"
+
+rem Èç¹ûÒªÍ¨¹ıÅú´¦ÀíÉ¾³ıÊäÈëÎÄ¼ş£¬ÇëÔÚÉÏÃæÁ½ĞĞµÄ¿ªÍ·Ìí¼ÓREM£¬²¢ÔÚÏÂÁ½ĞĞµÄ¿ªÍ·É¾³ıREM¡£
+rem call :echo ÊäÈëÎÄ¼şÉ¾³ı
 rem del "%infile%"
 goto end_cleanup
-rem ---é–¢æ•°ç­‰---
+rem --- ¹¦ÄÜº¯Êı ---
 :getFilesize
 set filesize=%~z1
 exit /b
@@ -191,38 +209,39 @@ set msg_output=%*
 echo. %msg_output%
 >>"%PATH_LogFile%" echo. %msg_output%
 exit /b
-rem ---ã‚¨ãƒ©ãƒ¼å‡¦ç†---
+rem --- ´íÎó´¦Àí ---
 :hb_err
-set errmsg=å¤–éƒ¨ã‚³ãƒãƒ³ãƒ‰ã¯ç•°å¸¸çµ‚äº†ã—ã¾ã—ãŸ.
+set errmsg=Íâ²¿ÃüÁîÒì³£ÖĞÖ¹
 goto end_err
 :nofiledir
-set errmsg=å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ«ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª %~1 ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“.
+set errmsg=ÊäÈëÎÄ¼şÄ¿Â¼ %~1 ²»´æÔÚ
 goto end_err
 :nofile
-set errmsg=å…¥åŠ›ãƒ•ã‚¡ã‚¤ãƒ« %~1 ãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“.
+set errmsg=ÊäÈëÎÄ¼ş %~1 ²»´æÔÚ
 goto end_err
 :error_sel_ftype
-set errmsg=ç’°å¢ƒå¤‰æ•°file_typeãŒæ­£ã—ããªã„ãŸã‚å¤‰æ›å‡¦ç†ã‚’ä¸­æ­¢ã—ã¾ã™.
+set errmsg=»·¾³±äÁ¿file_type²»ÕıÈ·£¬×ª»»ÖĞÖ¹
 goto end_err
 :error_noexefile
-set errmsg=å‡¦ç†ã«å¿…è¦ãªãƒ•ã‚¡ã‚¤ãƒ«ã¾ãŸã¯ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªãŒè¦‹ã¤ã‹ã‚Šã¾ã›ã‚“. å¿…è¦ãªãƒ•ã‚¡ã‚¤ãƒ«ãƒ»ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã¾ãŸã¯ãƒãƒƒãƒãƒ•ã‚¡ã‚¤ãƒ«ã«è¨˜è¿°ã•ã‚Œã¦ã„ã‚‹ãƒ‘ã‚¹ã‚’ç¢ºèªã—ã¦ä¸‹ã•ã„.
+set errmsg=ÕÒ²»µ½´¦ÀíËùĞèµÄÎÄ¼ş»òÄ¿Â¼¡£Çë¼ì²éËùĞèÎÄ¼şÄ¿Â¼»òÅú´¦ÀíÎÄ¼şÖĞÃèÊöµÄÂ·¾¶¡£
 goto end_err
 :error_samefileexist
-set errmsg=åŒåã®å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ãŒå­˜åœ¨ã™ã‚‹ãŸã‚å¤‰æ›å‡¦ç†ã‚’ä¸­æ­¢ã—ã¾ã™.
+set errmsg=Êä³öÎÄ¼şÖØÃû£¬×ª»»ÖĞÖ¹
 goto end_err
 :error_outdirnotexist
-set errmsg=å‡ºåŠ›å…ˆãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª %PATH_OutputDir% ãŒè¦‹ã¤ã‹ã‚‰ãªã„ãŸã‚å‡ºåŠ›ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ç§»å‹•ã§ãã¾ã›ã‚“ã§ã—ãŸ.
+set errmsg=Êä³öÄ¿Â¼ %PATH_OutputDir% ²»´æÔÚ£¬×ª»»ÖĞÖ¹
 goto end_err
 :end_err
 if not defined errmsg goto end
-call :echo *** ç•°å¸¸çµ‚äº† ***
+call :echo *** Òì³£½áÊø ***
 call :echo errmsg:%errmsg%
 set retnum=1
 :end_cleanup
-rem ä½œæ¥­ãƒ•ã‚¡ã‚¤ãƒ«å‰Šé™¤å‡¦ç†
-if exist "%infilename%.ass" del "%infilename%.ass"
-if exist "%infilename%.srt" del "%infilename%.srt"
+rem ×÷ÒµÎÄ¼şÉ¾³ı´¦Àí
+rem if exist "%infilename%.ass" del "%infilename%.ass"
+rem if exist "%infilename%.srt" del "%infilename%.srt"
 if exist "%infilename% (%PARAM_FileDesc%).temp.%outftypename%" del "%infilename% (%PARAM_FileDesc%).temp.%outftypename%"
 :end
 call :echo ----------------------------------------
-exit %retnum%
+pause
+rem exit %retnum%

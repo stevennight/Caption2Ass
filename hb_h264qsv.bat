@@ -10,8 +10,8 @@ echo 引数指定方法: "入力ファイルパス" [プリセット名 [mkv/mp4
 echo 引数指定例: "番組タイトル.ts" 480p mp4
 echo 既定の設定: 720p mkv
 rem 指定が無ければmkvで出力します. MKV変換を行う場合はMKVToolNixが必要です.
-SET PATH_HandBrakeCLI=C:\Program Files\Handbrake\HandBrakeCLI.exe
-SET PATH_Caption2Ass=C:\TvRock\Cap2Ass_C5\Caption2AssC_x64.exe
+SET PATH_HandBrakeCLI=C:\Users\Administrator\Desktop\Caption2Ass-master\HandBrakeCLI.exe
+SET PATH_Caption2Ass=C:\Users\Administrator\Desktop\Caption2Ass-master\bin\Caption2AssC_x64.exe
 SET PATH_mkvmerge=C:\Program Files\MKVToolNix\mkvmerge.exe
 SET PATH_OutputDir=D:\DTV
 SET PATH_LogFile=HB_Batch.log

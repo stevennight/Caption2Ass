@@ -22,7 +22,7 @@
     <ClCompile Include="tslUtil.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\common\CommRoutine.cpp">
+    <ClCompile Include="CommRoutine.cpp">
       <Filter>Source Files\common</Filter>
     </ClCompile>
   </ItemGroup>
